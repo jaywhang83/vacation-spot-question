@@ -16,14 +16,18 @@
 
 <body>
   <div class="jumbotron" id="box1">
-    <p class="maybehere">Would you like to answer some questions?</p>
-    <div class="input-group" id="testsubmit">
+    <p><span class="question">Would you like to answer some question?</span></p>
+    <form id="testsubmit">
+    <div class="input-group">
       <span class="input-group-btn">
-        <button class="btn btn-danger" type="button">Enter!</button>
+        <button class="btn btn-danger" type="submit">Enter!</button>
       </span>
       <input type="text" class="form-control" placeholder="Yes or No" id="enterHere">
     </div>
-    <p class="test"><span class="here"></span>Im here</p>
+    <div class="answer">
+      <p class="test">your destination is <span class="here"></span>.</p>
+    </div>
+    </form>
   </div>
 </body>
 </html>
