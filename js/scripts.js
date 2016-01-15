@@ -2,29 +2,6 @@ $(document).ready(function(){
 
   $("form#testsubmit").submit(function(event){
     debugger;
-    var warmDestination = {
-                          america:
-                          {beach: "Hawaii",
-                          mountain: "Colorado"},
-                          europe:
-                          {beach: "Croatia",
-                            mountain: "Spain"},
-                          asia:
-                          {beach: "Singapore",
-                            mountain: "Laos"}
-                        };
-
-    var coldDestination = {
-                          america:
-                          {beach: "Alaska",
-                          mountain: "Cananda"},
-                          europe:
-                          {beach: "Iceland",
-                            mountain: "Russia"},
-                          asia:
-                          {beach: "Japan",
-                            mountain: "China"}
-                        };
     var question0 = "Would you like to answer some question?"
     var question1 = "Warm or cold?";
     var question2 = "dry or humid?"; // warm question
@@ -60,11 +37,6 @@ $(document).ready(function(){
       $(".answer").show();
     };
 
-   /*
-   else if (answer === "outdoor") {
-
-   }
-   */
     if (answer === "cold") {
      $("span.question").text(question4);
     }
@@ -78,12 +50,12 @@ $(document).ready(function(){
       $("span.here").text("Dublin");
       $(".answer").show();
     }
-    //else if ()
+    else if (answer === "museum") {
+      $("span.here").text("France");
+      $(".answer").show();
+    }
 
-
-
- //}
-      event.preventDefault();
+    event.preventDefault();
 
   });
 });
