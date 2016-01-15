@@ -32,52 +32,57 @@ $(document).ready(function(){
     var question4 = "Rain or snow?"; // cold question
     var question5 = "Do you enjoy outdoor activity or indoor activity?"
     var question6 = "Do you like big city or small city?";
+    var question7 = "Museum or bar?"
+    var question8 = "Coffee or beer?"
 
-    //function answerHolder() {
-      var answer = $("input#enterHere").val();
-    //}
-      //$(".maybehere").text("<p>Question?</p>");
-      $(".here").text(answer);
+    var answer = $("input#enterHere").val();
+
+
+ //while (answer !== "no") {
+   if (answer === "warm") {
+     $("span.question").text(question2);
+   }
+   else if (answer === "dry") {
+     $("span.question").text(question6);
+   }
+   else if (answer === "big") {
+     $("span.question").text(question5);
+   }
+   else if (answer === "outdoor") {
+      $("span.question").text(question3);
+    }
+    else if (answer === "beach") {
+      $("span.here").text("Hawaii");
       $(".answer").show();
-      var flag = true;
-    //  if ((answer === "yes") || (answer === "no")) {
-        //alert("Invalid option please enter yes or no");
-        if (answer === "yes") {
-          $("span.question").text(question1); // goes to warm or cold question
-          if (answer === "warm" && flag) {
-            $("span.question").text(quesion2); // goes to dry or humid question
-            if (answer === "dry" && flag) {
-              $("span.question").text(question6); // goes to big city or small city
-              if (answer === "big city") {
-                $("span.question").text(question5);
-                if(answer === "outdoor"){
-                  (".here").text();
-                }
-                else {
+    }
+    else if (answer === "mountain"){
+      $("span.here").text("Austin");
+      $(".answer").show();
+    };
 
-                }
-              }
-              else {
+   /*
+   else if (answer === "outdoor") {
 
-              }
-            }
-            else {
+   }
+   */
+    if (answer === "cold") {
+     $("span.question").text(question4);
+    }
+    else if (answer === "rain" || answer === "snow") {
+      $("span.question").text(question8);
+       }
+    else if (answer === "beer") {
+      $("span.question").text(question7);
+       }
+    else if (answer === "bar") {
+      $("span.here").text("Dublin");
+      $(".answer").show();
+    }
+    //else if ()
 
-            }
 
-          }
-          else {
 
-          }
-        }
-        else {
-            $("span.question").text("GoodBye");
-        }
-        /*
-      }
-      else {
-      }
-*/
+ //}
       event.preventDefault();
 
   });
