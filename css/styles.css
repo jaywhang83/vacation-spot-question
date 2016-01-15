@@ -1,0 +1,23 @@
+body {
+  background-color: #A5D6A7;
+}
+
+#box1 {
+  background-color: #B3E5FC;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 700px;
+  max-height: 100px;
+}
+
+p {
+  text-align: center;
+}
+
+.test {
+  display: none; 
+}
