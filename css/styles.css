@@ -21,3 +21,27 @@ p {
 .answer{
   display: none;
 }
+
+
+div {
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.heading {
+  box-shadow: none;
+  text-align: center;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.answer {
+  background-color: white;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
