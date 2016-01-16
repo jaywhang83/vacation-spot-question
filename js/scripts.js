@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   $("form#testsubmit").submit(function(event){
     debugger;
+    /*
     var question0 = "Would you like to answer some question?"
     var question1 = "Warm or cold?";
     var question2 = "dry or humid?"; // warm question
@@ -11,22 +12,34 @@ $(document).ready(function(){
     var question6 = "Do you like big city or small city?";
     var question7 = "Museum or bar?"
     var question8 = "Coffee or beer?"
+    */
+
+    var questionBank = ["Would you like to answer some question?",
+                         "Warm or cold?",
+                         "dry or humid?",
+                         "Beach or mountain?",
+                         "Rain or snow?",
+                         "Do you enjoy outdoor activity or indoor activity?",
+                         "Do you like big city or small city?",
+                         "Museum or bar?",
+                         "Coffee or beer?"
+                        ];
 
     var answer = $("input#enterHere").val();
 
 
  //while (answer !== "no") {
    if (answer === "warm") {
-     $("span.question").text(question2);
+     $("span.question").text(questionBank[2]);
    }
    else if (answer === "dry") {
-     $("span.question").text(question6);
+     $("span.question").text(questionBank[6]);
    }
    else if (answer === "big") {
-     $("span.question").text(question5);
+     $("span.question").text(questionBank[5]);
    }
    else if (answer === "outdoor") {
-      $("span.question").text(question3);
+      $("span.question").text(questionBank[3]);
     }
     else if (answer === "beach") {
       $("span.here").text("Hawaii");
@@ -38,13 +51,13 @@ $(document).ready(function(){
     };
 
     if (answer === "cold") {
-     $("span.question").text(question4);
+     $("span.question").text(questionBank[4]);
     }
     else if (answer === "rain" || answer === "snow") {
-      $("span.question").text(question8);
+      $("span.question").text(questionBank[8]);
        }
     else if (answer === "beer") {
-      $("span.question").text(question7);
+      $("span.question").text(questionBank[7]);
        }
     else if (answer === "bar") {
       $("span.here").text("Dublin");
