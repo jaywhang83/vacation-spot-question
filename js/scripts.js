@@ -11,7 +11,6 @@ var beerOrwine = "beer or wine?";
 var q;
 var p;
 $(document).ready(function(){
-
   $("form#testsubmit").submit(function(event){
     debugger;
     var answer = $("input#enterHere").val();
@@ -38,7 +37,7 @@ $(document).ready(function(){
       }
       else {
         if (p === 1) {
-          smallRoute(answer);
+          coldRoute(answer);
         }
       }
 
@@ -48,12 +47,12 @@ $(document).ready(function(){
       }
       else {
         if (q === 1){
-          bigRoute(answer);
+          warmRoute(answer);
         }
       }
     }
 
-    function bigRoute(answer) {
+    function warmRoute(answer) {
       if (answer === "bar") {
         $("span.question").text(indoorOrOutdoorQuestion);
       }
@@ -80,7 +79,7 @@ $(document).ready(function(){
       }
     }
 
-    function smallRoute(answer) {
+    function coldRoute(answer) {
       if (answer === "beer") {
         $("span.question").text(indoorOrOutdoorQuestion);
       }
