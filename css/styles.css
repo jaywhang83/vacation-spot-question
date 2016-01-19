@@ -45,3 +45,9 @@ div {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
+
+.jumbotron h2 {
+  text-align: center;
+  text-shadow: 10px 10px 5px #888888;
+  margin-bottom: 10px;
+}
